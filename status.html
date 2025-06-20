@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status</title>
+  <link rel="stylesheet" href="status_style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html">HOME</a>
+      <a href="status.html">싱크홀 현재 현황</a>
+      <a href="danger.html">싱크홀 예상 지역</a>
+      <a href="#">시민 안전 대응 매뉴얼</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sink container">
+      <div class="text-block">
+        <h2>매년 증가하는 지반 침하, 한국의 싱크홀</h2>
+        <p>
+          최근 몇 년간 한국에서는 지하 개발 증가와 노후 인프라 문제로 인해 도심 지역을 중심으로 싱크홀 발생이 꾸준히 보고되고 있습니다. 특히 서울, 대전, 인천 등에서는 도로와 보도에서 지반이 갑자기 꺼지는 사례가 반복적으로 발생하고 있으며, 2020년부터 2023년 사이 서울에서만 300건이 넘는 지반 침하 사고가 접수되었습니다. 이는 노후 상하수도관, 지하수 유출, 부실 시공 등 다양한 요인이 복합적으로 작용한 결과로, 생활 공간 가까이에서 일어날 수 있는 실질적인 도시 안전 문제로 주목받고 있습니다.
+        </p>
+      </div>
+      <div class="button-align">
+        <div class="button-group">
+          <a href="#" class="status-button">
+            지자체별 현황 바로가기
+            <span class="arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5L15 12L8 19"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="status-button">
+            월별 현황 바로가기
+            <span class="arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5L15 12L8 19"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="status-button">
+            원인별 현황 바로가기
+            <span class="arrow-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5L15 12L8 19"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="line-align1">
+        <div class="bottom-line"></div>
+      </div>
+    </section>
+
+    <section class="section region-status container">
+      <div class="region-text">
+        <h3>지자체별 현황</h3>
+      </div>
+      <div class="region-flex">
+        <div class="region-image1">
+          <img src="img/Korea Map.png" alt="지도 이미지" />
+        </div>
+        <div class="region-group">
+          <div class="region-image2">
+            <img src="img/ranking.png" alt="순위" />
+          </div>
+          <div class="region-image3">
+            <img src="img/bar graph.png" alt="막대 그래프" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section month-status container">
+      <div class="line-align2">
+        <div class="top-line"></div>
+      </div>
+      <div class="month-text">
+        <h3>월별 현황</h3>
+      </div>
+      <div class="month-graph">
+        <img src="img/dot bat graph.png" alt="월별 그래프" />
+      </div>
+      <div class="line-align1">
+        <div class="bottom-line"></div>
+      </div>
+      <div class="dot-wrapper">
+        <img class="blue-dot1" src="img/blue circle.png" alt="파란 원1" />
+        
+        <!-- 올바르게 정리된 빨간 원 하나 -->
+        <div class="dot-container red">
+          <img class="red-dot" src="img/red circle.png" alt="빨간 원" />
+          <div class="counter"><span class="count-text">+594%</span></div>
+        </div>
+      
+        <img class="blue-dot2" src="img/blue circle.png" alt="파란 원2" />
+      </div>
+      
+    </section>
+
+    <section class="section cause-status container">
+      <div class="line-align2">
+        <div class="top-line"></div>
+      </div>
+      <div class="month-text">
+        <h3>원인별 현황</h3>
+      </div>
+
+      <div class="cause-graph">
+        <!-- 첫 번째 박스 -->
+        <div class="box-group">
+          <div class="label-group">
+            <div class="percent">5.6%</div>
+            <div class="label-text">상수관 손상</div>
+            <div class="label-line"></div>
+          </div>
+          <div class="square-box square-box1" data-index="0"></div>
+          <p class="desc-item">상수관이 손상되면 누수된 물이 주변 토사를 씻어내면서 지하에 빈 공간이 생기게 됩니다.</p>
+        </div>
+
+        <!-- 두 번째 박스 -->
+        <div class="box-group">
+          <div class="label-group">
+            <div class="percent">19.8%</div>
+            <div class="label-text">다짐 불량</div>
+            <div class="label-line"></div>
+          </div>
+          <div class="square-box square-box2" data-index="1"></div>
+          <p class="desc-item">다짐은 토양이나 흙을 눌러서 공극(빈 공간)을 줄이고, 흙의 밀도와 지지력을 높이는 작업입니다.</p>
+        </div>
+
+        <!-- 세 번째 박스 -->
+        <div class="box-group">
+          <div class="label-group">
+            <div class="percent">31.0%</div>
+            <div class="label-text">하수관 손상</div>
+            <div class="label-line"></div>
+          </div>
+          <div class="square-box square-box3" data-index="2"></div>
+          <p class="desc-item">하수관에서 물이 새면, 주변 지반의 토양 입자가 물에 녹아내리면서 빈 공간이 생깁니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Digital Publishing 1</p>
+    </div>
+  </footer>
+</body>
+</html>

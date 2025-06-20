@@ -1,0 +1,141 @@
+        /* 기본 세팅 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebebeb;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1420px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        /* 네비게이션 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ebebeb; /* 배경색 지정 필수! (투명하면 아래 내용 보임) */
+            z-index: 1000; /* 다른 요소보다 위에 표시되도록 */
+            padding: 24px 0;
+          }
+          
+          main {
+            padding-top: 100px; /* 헤더 높이만큼 여백 (조정 가능) */
+          }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 72px;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.04em;
+        }
+        
+        /* 타이틀 */
+        .sink {
+            padding: 100px 0 64px;
+        }
+        .text-block {
+            width: 100%;
+            max-width: 1420px;
+            margin-left: 0;
+        }
+        .text-block h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            line-height: 1.5;
+            color: #212121;
+        }
+        .danger-text {
+            font-size: 24px;
+            font-weight: bolder;
+            margin-bottom: 32px;
+            line-height: 1.5;
+            color: #212121;
+        }
+        .text-block p {
+            font-size: 20px;
+            line-height: 2;
+            color: #444;
+        }
+        
+        /* 선 */
+        .line-align1 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 100px;
+        }
+        .bottom-line {
+            width: 1420px;
+            height: 1.5px;
+            background-color: #000;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        .line-align2 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin: 60px 0 40px 0; /* 위 60px, 아래 40px */
+        }
+        .top-line {
+            width: 224px;
+            height: 1.5px;
+            background-color: #000;
+        }
+        
+        /* 섹션 제목 */
+        .section {
+            padding: 50px 0;
+        }
+        .section h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        /* 이미지 */
+        .danger-image1 {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .danger-image1 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .danger-map {
+            display: flex; /* 요소 가로 정렬 */
+            justify-content: center; /* 중앙 정렬 */
+            align-items: center;
+            gap: 200px; /* ← 이미지 사이 간격 */
+            margin-top: 100px;
+        }
+
+        
+        
+
+        /* 푸터 */
+        footer {
+            padding: 48px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            border-top: 1px solid #ebebeb;
+        }
+        

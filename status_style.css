@@ -1,0 +1,336 @@
+/* 기본 세팅 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+}
+
+.container {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 네비게이션 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ebebeb; /* 배경색 지정 필수! (투명하면 아래 내용 보임) */
+  z-index: 1000; /* 다른 요소보다 위에 표시되도록 */
+  padding: 24px 0;
+}
+
+main {
+  padding-top: 100px; /* 헤더 높이만큼 여백 (조정 가능) */
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 72px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+/* 타이틀 */
+.sink {
+  padding: 100px 0 64px;
+}
+.text-block {
+  width: 100%;
+  max-width: 1420px;
+  margin-left: 0;
+}
+.text-block h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  color: #212121;
+}
+.text-block p {
+  font-size: 20px;
+  line-height: 2;
+  color: #444;
+}
+
+/* 버튼 */
+.button-align {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.button-group {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.status-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #212121;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+  gap: 12px;
+}
+
+.status-button:hover {
+  background-color: #444444;
+}
+
+/* 선 */
+.line-align1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+.bottom-line {
+  width: 1178px;
+  height: 1.5px;
+  background-color: #000;
+  margin-bottom: 60px;
+  margin-left: auto;
+}
+.line-align2 {
+  margin-top: 100px;
+}
+.top-line {
+  width: 224px;
+  height: 1.5px;
+  background-color: #000;
+}
+
+/* 섹션 제목 */
+.section {
+  padding: 50px 0;
+}
+.section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 그래프 */
+.region-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  margin-left: 40px;
+  margin-top: 120px;
+}
+.region-image1 {
+  width: 40%;
+}
+.region-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  margin-left: 50px;
+}
+
+.month-graph {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: -80px;
+}
+
+/* 도트 */
+.dot-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+  height: 180px;
+}
+.red-dot {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.blue-dot1, .blue-dot2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  object-fit: contain;
+}
+.blue-dot1 { left: 21%; }
+.blue-dot2 { right: 12.5%; }
+
+.dot-container {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.counter .plus,
+.counter .number {
+  font-size: inherit;
+  line-height: 1;
+}
+
+.dot-container:hover .counter {
+  transform: translateX(-50%) translateY(-40px);
+  opacity: 1;
+}
+
+/* 원인별 박스 */
+.cause-graph {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 200px;
+  margin-top: 100px;
+}
+.square-box1, .square-box2, .square-box3 {
+  background-color: #212121;
+  transition: background 0.4s ease;
+  margin-bottom: 20px;
+}
+.square-box1 { width: 200px; height: 200px; border-radius: 60px; }
+.square-box2 { width: 250px; height: 250px; border-radius: 75px; }
+.square-box3 { width: 300px; height: 300px; border-radius: 90px; }
+/* hover 효과 */
+.square-box1:hover,
+.square-box1.fixed {
+  background: radial-gradient(circle, #33D4CC 0%, #212121 70%);
+}
+
+.square-box2:hover,
+.square-box2.fixed {
+  background: radial-gradient(circle, #33D4CC 0%, #212121 70%);
+}
+
+.square-box3:hover,
+.square-box3.fixed {
+  background: radial-gradient(circle, #FF6100 0%, #212121 70%);
+}
+.box-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square-box.fixed {
+  box-shadow: 0 0 0 2px #fff inset;
+}
+
+
+/* 설명 텍스트 마진 추가 */
+.desc-item {
+  display: none;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  max-width: 800px;
+  margin: 20px auto 0; /* ← 여기! 위에만 20px 여백 추가 */
+}
+
+
+.desc-item.active {
+  display: block;
+}
+
+.label-group {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  text-align: right;
+}
+
+.label-group.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.percent {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+.label-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 4px;
+}
+.label-line {
+  width: 1.5px;
+  height: 40px;
+  background-color: #000;
+  margin-top: 8px;
+}
+
+.cause-description {
+  margin-top: 40px;
+  text-align: center;
+}
+.desc-item {
+  display: none;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0 auto;
+  text-align: left;
+}
+.desc-item.active {
+  display: block;
+  max-width: 300px;
+}
+
+/* 푸터 */
+footer {
+  padding: 48px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #ebebeb;
+}
